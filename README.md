@@ -1,4 +1,4 @@
-# 🐬 MySQL Full Course – Bro Code
+#  MySQL Full Course – Bro Code
 
 📺 **YouTube Link**  
 ▶️ https://youtu.be/5OdVJbNCSso?si=7p-xO3g4_KhirNbF  
@@ -114,5 +114,3 @@ This repository contains my notes and practice while learning **MySQL** from the
 - 02:42:22 TRIGGERS  
 
 ---
-
-🚀 Learning MySQL alongside Java to build strong backend and database fundamentals.
