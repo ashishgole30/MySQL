@@ -1,0 +1,22 @@
+SQL = Structured Query Language
+
+Used to 
+1. Create
+2. Retrieve
+3. Update
+4. Delete
+Data from a Database
+
+Two Types of Databases
+1. Relational
+(rows and coloumns)
+We use SQL
+
+2. Non Relational
+(any format but a table)
+We use NoSQL
+
+We will need a software called DBMS Databse Management System
+Its a workspace for us to write SQL statements
+
+We will be working with MySQL Databse Management System

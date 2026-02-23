@@ -1,0 +1,30 @@
+1. Go to mysql.com website
+2. Go to downloads tab
+3. Scroll down and click on MYSQL Community downloads
+4  Click on MySQL installer for windows
+5. Make sure operating system is set to windows
+6. Click on No thanks just start my download
+7. Open the downloaded folder
+8. Press Yes if Administrator is opened
+9. Choose a setup
+10. Click on custom
+11. Click next
+12. Click and add latest MySQL server and MySQl workbench
+13. Click next
+14. Click execute
+15. Click next
+16. Click execute
+17. It says complete now
+18. keep clicking next
+19. Select keep strong password auehtication
+20. Make mysql root password
+21. next
+22. next
+23. execute
+24. finish
+25. next
+26. finish
+27. Mysql workbench will pop up , if doesnt just search for mysql 
+28. Enter password
+29. It will open
+30. Done
