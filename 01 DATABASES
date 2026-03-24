@@ -1,2 +1,30 @@
-Database is like a folder.
+1.Database is like a folder.
 It acts as a container.
+
+2.There is no case sensitivity in mysql
+You can write CREATE/create/Create
+
+3. End each statement with a semicolon ;
+
+4. To create a database use the statement
+CREATE DATABASE datbasename;
+
+5. To Use database use the statement
+USE databasename;
+
+6.To drop a database use the statement
+DROP DATABASE databasename;
+
+7.To make our database read only use the statement
+ALTER DATABASE databasename READ ONLY = 1;
+we cant modify but we can access the data within it
+
+8.To disable read only mode
+ALTER DATABASE databasename READ ONLY = 0;
+
+9. We learnt how to
+1.create
+2.use
+3.drop 
+4.alter 
+database
