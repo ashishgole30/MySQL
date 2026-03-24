@@ -1,0 +1,52 @@
+1. Tables consists of rows and coloumns similar to excel spreadsheet
+
+2. To create a Table use the statement
+CREATE TABLE nameofthetable (
+    list the coloumns
+    each coloumn is separated with a comma
+);
+
+3. After each coloumn we need to state the datatype of what will be storing
+
+example:CREATE TABLE employees(
+employee_id INT,
+first_name VARCHAR(50),
+last_name VARCHAR(50),
+hourly_pay DECIMAL(5,2),
+hire_date DATE
+);
+
+4. To select a Table use statement
+SELECT * FROM nameofthetable;
+
+5. To rename a Table use statement
+RENAME TABLE previousname TO newname;
+
+6. To drop a Table
+DROP TABLE nameoftable;
+
+7. To alter a Table
+ALTER TABLE nameoftable
+ADD coloumnname datatype;
+
+8. To rename a coloumn
+ALTER TABLE nameoftable
+RENAME COLUMN previousname TO newname;
+
+9. To modify datatype
+ALTER TABLE nameofthetable
+MODIFY COLUMN nameofthecolumn modified-datatype
+
+10. To move coloumn around / position of coloumns
+ALTER TABLE nameoftable
+MODIFY  coloumnname coloumn datatype
+AFTER nameofcoloum after which we want our coloumn to be;
+
+11. If we want a coloumn to be first
+ALTER TABLE nameoftable
+MODIFY  coloumnname coloumn datatype
+FIRST;
+
+12. To Drop a coloumn
+ALTER TABLE nameoftable
+DROP COLUMN nameofthecolumn;
