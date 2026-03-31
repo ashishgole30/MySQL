@@ -1,0 +1,22 @@
+To select data from a table in SQL, you can use the SELECT statement.
+The basic syntax for the SELECT statement is as follows:
+statement:
+SELECT * FROM nameofthetable
+
+To select specific columns from the table, you can specify the column names instead of using the asterisk (*).
+statement:
+SELECT column1, column2
+FROM nameofthetable
+example:
+SELECT first_name ,last_name
+FROM employees;
+
+You can also use the WHERE clause to filter the results based on specific conditions.
+statement:
+SELECT *
+FROM nameofthetable
+WHERE condition;
+example:
+SELECT *
+FROM employees
+WHERE employee_id = 1;    
