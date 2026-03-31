@@ -20,3 +20,15 @@ example:
 SELECT *
 FROM employees
 WHERE employee_id = 1;    
+example:
+SELECT *
+FROM employees
+WHERE hourly_pay >= 15;
+example:
+SELECT *
+FROM employees
+WHERE hire_date <= "";
+example:
+SELECT *
+FROM employees
+WHERE employee_id != 1;
