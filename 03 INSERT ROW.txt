@@ -1,0 +1,19 @@
+1. Create a database
+2. Use that database
+3. Create a table
+4. Select that table
+
+To insert row into a table
+(comma separated data for each coloumn)
+statement:
+INSERT INTO tablename
+VALUES(,);
+
+example:
+INSERT INTO employees
+VALUES (1,"Eugene","Krabs",25.50,"2023-01-02");
+SELECT * FROM employees;
+
+Inserting mutliple rows at once:
+INSERT INTO tablename
+VALUES(),(),(),();
