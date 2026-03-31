@@ -17,3 +17,18 @@ SELECT * FROM employees;
 Inserting mutliple rows at once:
 INSERT INTO tablename
 VALUES(),(),(),();
+example:
+INSERT INTO employees
+VALUES
+(2,"Squidward","Tentacles",15.50,"2023-01-03"),
+(3,"Spongebob","Squarepants",18.00,"2023-01-04"),
+(4,"Patrick","Star",35.50,"2023-01-05"),
+(5,"Sandy","Cheeks",22.50,"2023-01-06");
+SELECT * FROM employees;
+
+Attempting to insert a row with missing data:
+We get an error
+
+To instert data into specific coloumns of a table:
+INSERT INTO tablename (coloumn_name_1,coloumn_name_2)
+VALUES(,);
