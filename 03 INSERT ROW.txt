@@ -32,3 +32,8 @@ We get an error
 To instert data into specific coloumns of a table:
 INSERT INTO tablename (coloumn_name_1,coloumn_name_2)
 VALUES(,);
+
+Fidning employees that do not have a hire date:
+SELECT *
+FROM employees
+WHERE hire_date IS NULL;

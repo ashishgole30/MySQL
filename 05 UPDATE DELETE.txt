@@ -1,0 +1,33 @@
+To update data in a table
+statement:
+UPDATE nameoftable
+SET coloumn_name = new_value;
+example:
+UPDATE employees
+SET hourly_pay = 10.25
+WHERE employee_id = 6;
+SELECT * FROM employees;
+example:
+UPDATE employees
+SET hourly_pay = 10.50,
+	hire_date = "2023-01-07"
+WHERE employee_id = 6;
+SELECT * FROM employees;
+
+NOTE TO DISABLE SAFE UPDATE MODE :
+set sql_safe_updates = 0;
+
+To update data to null:
+example:
+UPDATE employees
+SET hourly_pay = NULL
+WHERE employee_id = 6;
+SELECT * FROM employees;
+
+To delete a row from a table:
+DELETE FROM nameofthetable
+SELECT * FROM nameofthetable;
+example:
+DELETE FROM employees
+WHERE employee_id = 7;
+SELECT * FROM employees;
