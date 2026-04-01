@@ -1,0 +1,23 @@
+In MySQL, autocommit, COMMIT, and ROLLBACK are essential for managing database transactions.
+They control how and when your data changes are saved permanently to the database. 
+
+To check current status: SELECT @@autocommit;.
+To disable it for a session: SET autocommit = 0;.
+To enable it for a session: SET autocommit = 1;.
+
+1. Autocommit
+Autocommit is a mode by default autocommit is set to ON.
+Whenever u execute a transaction within mysql , that transaction is saved.
+This is the default mode in MySQL. When enabled, every individual SQL statement (like INSERT or UPDATE)
+is treated as a complete transaction and is automatically saved as soon as it finishes successfully.
+
+2. COMMIT: This command permanently saves all changes made during the current transaction. Once you execute COMMIT, 
+the changes are written to the disk and become visible to other users;
+they cannot be undone using a rollback.
+
+3. ROLLBACK: This command undoes all changes made during the current transaction that have not yet been committed.
+It reverts the database back to its state at the beginning of the transaction or to a specific SAVEPOINT. 
+
+SET AUTOCOMMIT = OFF;
+COMMIT;
+ROLLBACK;
