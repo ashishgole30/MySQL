@@ -1,0 +1,11 @@
+1. For current date
+CURRENT_DATE()
+2. For current time
+CURRENT_TIME()
+3. For current datetime
+NOW()
+
+for tommorow
+CURRENT_DATE() + 1
+for yesterday
+CURRENT_DATE() + 1
