@@ -1,0 +1,12 @@
+NOT NULL CONSTRAINT
+
+NOT NULL CONSTRAINT can be added to a coloumn when you create a table
+Whenever you enter a new row , the value within that coloumn cannot be NULL
+
+To add the NOT NULL Constraint
+select the coloumn after the datatype add NOT NULL keyword
+
+OR
+
+ALTER TABLE name_of_the_table
+MODFIY name_of_the_coloumn datatype_of_coloumn NOT NULL;
