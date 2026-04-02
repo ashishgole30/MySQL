@@ -1,0 +1,19 @@
+1. Check Constraint
+The Check Constraint is used to limit what values can be placed in a coloumn
+statement: write the below statement when creating a table
+CONSTRAINT Constraint_Name CHECK (condition)
+
+To add a Check Constraint to a table that already exists
+Syntax:
+ALTER TABLE name_of_the_table
+ADD CONSTRAINT name_of_check CHECK(condition)
+
+Example:
+ALTER TABLE employees
+ADD CONSTRAINT chk_hourly_pay CHECK (hourly_pay >= 10.00);
+
+To delete a CHECK:
+ALTER TABLE name_of_the_table
+DROP CHECK name_of_check;
+
+(Useful for checking input)
