@@ -1,0 +1,55 @@
+JOINS
+
+In MySQL, a JOIN is a clause used to combine rows from two or more tables based on a related column between them.
+Joins allow you to retrieve data that is spread across multiple tables in a single query,
+which is essential for working with normalized databases.
+
+Core Types of Joins
+INNER JOIN: Returns only the records with matching values in both tables.
+LEFT/RIGHT JOIN: Returns all records from one table and matching records from the other, filling in NULL where matches don't exist.
+CROSS JOIN: Produces a Cartesian product, pairing every row of one table with every row of the other.
+SELF JOIN: Joins a table to itself, often used for hierarchical data1. 
+
+1. INNER JOIN
+SELECT * column_name(s)
+FROM table1 (table on the left) INNER JOIN table2 (table on the right)
+ON (table on the left)table1.column_name // name of foreign key coloumn = (table on the right) table2.column_name // name of the primary key coloumn;
+
+2. LEFT JOIN
+Basic Syntax
+The standard syntax for a LEFT JOIN between two tables is as follows:
+
+SELECT table1.column_name, table2.column_name
+FROM table1 LEFT JOIN table2 
+ON table1.common_column = table2.common_column;
+
+table1: The "left" table (all rows will be included).
+table2: The "right" table (only matching rows will be included).
+ON: The condition that defines how the tables are related
+
+3. RIGHT JOIN
+Basic Syntax
+The standard syntax for a RIGHT JOIN between two tables is as follows:
+
+SELECT table1.column_name, table2.column_name
+FROM table1 RIGHT JOIN table2 
+ON table1.common_column = table2.common_column;
+
+table1: The "right" table (all rows will be included).
+table2: The "left" table (only matching rows will be included).
+ON: The condition that defines how the tables are related
+
+4. CROSS JOIN
+In MySQL, a CROSS JOIN produces a Cartesian product of two tables,
+where every row from the first table is combined with every row from the second table.
+
+Standard Syntax
+The most common way to write a cross join uses the explicit CROSS JOIN keyword: 
+SELECT column_list FROM table1 CROSS JOIN table2;
+Alternative (Comma Syntax): You can also achieve a cross join by listing tables separated by a comma:
+SELECT * FROM table1, table2;
+
+Result Size: If table1 has N rows and table2 has M rows, the result set will contain N × M rows.
+
+5. SELF JOIN
+In MySQL, a self join is a regular join where a table is joined with itself. Because the query references the same table twice
