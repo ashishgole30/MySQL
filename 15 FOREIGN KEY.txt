@@ -1,0 +1,31 @@
+FOREIGN KEY CONSTRAINT:
+
+A FOREIGN KEY think of it as a primary key from One table
+that can be found within a different table
+Using a FOREIGN key we can establish a link between two tables
+
+In MySQL, a FOREIGN KEY constraint is a database rule used to link two tables together and enforce referential integrity.
+It ensures that the data in a "child" table corresponds to valid data in a "parent" table, 
+preventing orphaned records and maintaining consistent relationships. 
+
+1. Creating a Foreign Key (New Table)
+CREATE TABLE orders (
+    order_id INT PRIMARY KEY,
+    customer_id INT,
+    FOREIGN KEY (customer_id // 1st coloumn) REFERENCES customers // second table (customers_id // coloumn of the 2nd table) 
+);
+
+2. To drop a foreign key
+ALTER TABLE name_of_the_table_that_has_foreign_key
+DROP foreign name_of_foreign_key;
+
+3. To give foreign key unique name
+ALTER TABLE name_of_the_table
+ADD CONSTRAINT unique_name
+FOREIGN KEY (name_of_the_coloumn) references name_of_2ndTable (name_of_the_coloumn_that_has_primarykey)
+
+4.Adding a Foreign Key to an Existing Table
+ALTER TABLE orders 
+ADD CONSTRAINT fk_customer 
+FOREIGN KEY (customer_id) 
+REFERENCES customers(id);
