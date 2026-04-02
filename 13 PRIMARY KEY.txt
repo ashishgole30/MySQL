@@ -1,0 +1,26 @@
+PRIMARY KEY CONSTRAINT IN MYSQL
+
+The PRIMARY KEY CONSTRAINT can be applied to a coloumn
+where each valiue in that coloumn must be both
+unique and not null
+
+It is typically used as a unique identifier
+Also a table can only have 1 PRIMARY KEY CONSTRAINT
+Multiple PRIMARY KEY not allowed for a single table
+
+Example:
+create table transactions(
+transactions_id INT PRIMARY KEY,
+amount DECIMAL (5,2)
+);
+
+SELECT * FROM transactions;
+
+To add a PRIMARY KEY CONSTRAINT to table that already exists
+This is the syntax
+
+ALTER TABLE name_of_table
+ADD CONSTRAINT 
+PRIMARY KEY (column_name);
+
+Each value set as a PRIMARY KEY needs to be unique and cannot be null
