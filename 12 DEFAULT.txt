@@ -1,0 +1,38 @@
+DEFAULT CONSTRAINT
+
+1.When inserting a new row , if we do not specify a value for a cololumn
+By defualt we can add some value that we set
+
+lets say you are creating a table
+example:
+CREATE TABLE prodcuts(
+    prodcut_id INT,
+    prodcut_name VARCHAR (25),
+    price DECIMAL (4,2) DEFUALT 0.00 // This is the defualt constraint
+);
+
+2.To alter a table:
+
+ALTER TABLE name_of_the_table
+ALTER name_of_the_coloumn SET DEFAULT value;
+example:
+ALTER TABLE products
+ALTER price SET DEFAULT 0;
+
+3.example:
+INSERT INTO products
+VALUES (106,"Straw"),
+(107,"Napkin"),
+(108,"Tissue Paper"),
+(109,"Gloves");
+SELECT * FROM products;
+
+But we will need to type what we are inserting explicitly
+INSERT INTO products(product_id,product_name)
+VALUES (106,"Straw"),
+(107,"Napkin"),
+(108,"Tissue Paper"),
+(109,"Gloves");
+SELECT * FROM products;
+
+If you dont specify a value , you will use whatever the defualt is.
