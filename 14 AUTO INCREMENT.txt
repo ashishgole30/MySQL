@@ -1,0 +1,16 @@
+AUTO INCREMENT ATTRIBUTE IN MYSQL
+AUTO INCREMENT ATTRIBUTE can be applied to a coloumn that is set as a key
+
+use the keyword: AUTO_INCREMENT
+
+Example:
+create TABLE transactions(
+transaction_id INT PRIMARY KEY AUTO_INCREMENT,
+amount DECIMAL (5,2)
+);
+
+Thus transaction_id starts from 1 and keeps on incrementing by 1
+
+To start AUTO_INCREMENT from a different value:
+ALTER TABLE transactions
+auto_increment  = 1000;
