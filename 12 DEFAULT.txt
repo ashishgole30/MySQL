@@ -1,6 +1,6 @@
 DEFAULT CONSTRAINT
 
-1.When inserting a new row , if we do not specify a value for a cololumn
+1.When inserting a new row , if we do not specify a value for a coloumn
 By defualt we can add some value that we set
 
 lets say you are creating a table
