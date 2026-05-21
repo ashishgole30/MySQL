@@ -1,0 +1,14 @@
+1. CREATE DATABASE college;
+2. USE college;
+3. CREATE TABLE students
+    (
+    id INT,
+    name VARCHAR(50),
+    marks INT
+    );
+4. INSERT INTO students
+            VALUES (1, 'Ashish', 90),
+                   (2, 'Rahul', 85),
+                   (3, 'Priya', 95);
+
+5. SELECT * FROM students;
