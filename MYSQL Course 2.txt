@@ -1,4 +1,10 @@
 1.  WHERE Clause
+2. UPDATE
+3. DELETE
+4. ORDER BY
+5. LIMIT
+
+1.  WHERE Clause
 Used to filter/select specific rows.
 | Operator | Meaning       |
 | -------- | ------------- |
@@ -30,3 +36,59 @@ NOTE: Always use WHERE in UPDATE.
 Example:    UPDATE students
             SET marks = 95
             WHERE id = 2;
+
+3. DELETE
+Removes rows from table.
+Syntax:
+DELETE FROM table_name
+where (condition)
+Example:
+DELETE FROM students
+WHERE id = 3;
+Dangerous Query:
+DELETE FROM students;
+Deletes ALL data from table.
+Table remains, data disappears.
+Difference Between DELETE and DROP:
+Command	        What Happens
+DELETE	        removes rows
+DROP TABLE	    Deletes entire table
+
+4. ORDER BY
+Sorts data.
+
+Ascending Order
+SELECT * FROM students
+ORDER BY marks ASC;
+ASC = smallest → largest
+
+Descending Order
+SELECT * FROM students
+ORDER BY marks DESC;
+DESC = largest → smallest
+
+Example:
+Before Sorting
+name	marks
+Rahul	70
+Ashish	90
+Priya	95
+
+DESC Output
+name	marks
+Priya	95
+Ashish	90
+Rahul	70
+
+5. LIMIT
+Restricts number of rows shown.
+
+Syntax: SELECT * FROM table_name
+        LIMIT 2;
+Meaning: Show only first 2 rows.
+
+Combined Query Example:
+SELECT * FROM students
+WHERE marks > 70
+ORDER BY marks DESC
+LIMIT 2;
