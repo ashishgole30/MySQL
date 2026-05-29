@@ -1,0 +1,13 @@
+1.  WHERE Clause
+Used to filter/select specific rows.
+| Operator | Meaning       |
+| -------- | ------------- |
+| =        | Equal         |
+| >        | Greater than  |
+| <        | Less than     |
+| >=       | Greater/equal |
+| <=       | Less/equal    |
+| !=       | Not equal     |
+
+Syntax: SELECT * FROM table_name
+        WHERE (condition)

@@ -1,0 +1,58 @@
+1. CREATE DATABASE
+2. USE DATABASE
+3. CREATE TABLE
+4. INSERT INTO TABLE
+5. SELECT TABLE
+6. CREATE TABLE in DETAIL
+
+1. CREATE DATABASE databasename;
+Creates a new database.
+example: CREATE DATABASE college;
+
+2. USE databasename;
+example: USE college;
+Selects the database to work on.
+
+3. CREATE TABLE TABLE_NAME (
+    );
+Creates a table.
+example: 
+    CREATE TABLE students
+    (
+    id INT,
+    name VARCHAR(50),
+    marks INT
+    );
+
+4. INSERT INTO TABLE_NAME
+VALUES (, ,);
+Adds data into table.
+example: 
+    INSERT INTO students
+    VALUES (1, 'Ashish', 90);
+
+You can insert multiple rows too:
+INSERT INTO TABLE_NAME
+            VALUES (,,),
+                   (,,),
+                   (,,);
+
+5. SELECT * FROM TABLE_NAME;
+Displays data from table.
+example:SELECT * FROM students;
+
+6. CREATE TABLE IN DETAIL
+CREATE TABLE table_name (
+    column_name datatype,
+    column_name datatype
+);
+
+1. INT -> INT stores whole numbers.
+2. VARCHAR -> This stores text/string data.
+   VARCHAR(50) -> Maximum length allowed = 50 characters
+3. CHAR -> This stores text/string data but wastes memory
+4. FLOAT -> Used for decimal numbers.
+5. DATE -> Stores dates in YYYY-MM-DD
+6. DATETIME -> Stores both date and time.
+7. BOOLEAN -> Stores true or false , true = 1 , false = 0
+8. TEXT -> Stores large text
